@@ -21,8 +21,6 @@ for i in range(10000):
       
     scoreList.append(score)
 
-print(scoreList)
-
 with open("score.csv", "w", encoding="Shift_jis") as f:
     writer = csv.writer(f, lineterminator="\n")
     writer.writerows(scoreList)
